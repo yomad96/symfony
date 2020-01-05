@@ -1,0 +1,20 @@
+@import "~bootstrap/scss/bootstrap";
+@font-face{
+    font-family: "mandalorelaser";
+    src: url("../fonts/mandalorelaser.ttf") format("truetype");
+}
+html { height: 100%;}
+.header {
+    display:flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #0f4c75;
+    height:200px;
+    
+}
+.test{
+    font-size: 150px;
+    color: #bbe1fa;
+    font-family: "mandalorelaser";
+}
