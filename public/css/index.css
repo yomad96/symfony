@@ -14,20 +14,34 @@ body{
     grid-template-areas: "header header"
                          "nav main";
     grid-template-rows: 200px 1fr; 
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 220px 1fr;
     margin: 0;
 }
 
 header {
     grid-area: header ;
-    background: blue;
+    background: url("../images/banniere-site2.jpg") no-repeat;
+    background-size: cover;
 }
 nav{
-    background: red;
     grid-area: nav;
     height: 100%;
+    border-radius: 5px;
+    border-width: 10px;
+    border-color: #0f4c75;
+    border: solid;
 }
 main{
     grid-area: main;
-    background: saddlebrown;
+}
+
+.headerTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.titleName{
+    font-family: "mandalorelaser";
+    font-size: 100px;
 }
