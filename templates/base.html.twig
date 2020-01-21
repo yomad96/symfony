@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-    </body>
-</html>
+<head>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+    {% endblock %}
+</head>
+
+<body>
+    <header>
+        {% block header %}
+            <div class="headerTitle">
+                <span class="titleName">Films BDD</span>
+            </div>
+        {% endblock %}
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">link1</a></li>
+            <li><a href="#">link2</a></li>
+            <li><a href="#">link3</a></li>
+        </ul>
+        {% block sidebarLeft %}
+
+        {% endblock %}
+    </nav>
+    <main>
+        {% block main %}{% endblock %}
+    </main>
+</body>
