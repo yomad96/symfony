@@ -1,6 +1,7 @@
 <head>
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+        <link rel="stylesheet" href="{{ asset('../node_modules/hover.css/css/hover.css') }}">
     {% endblock %}
 </head>
 
@@ -10,18 +11,14 @@
             <div class="headerTitle">
                 <span class="titleName">Films BDD</span>
             </div>
+            <div class="navigation">
+                <a class="link-film" href="#">Films</a>
+                <a class="link-favoris" href="#">Favoris</a>
+                <a class="link-connexion" href="#">Connexion</a>
+                <a class="link-aVoir" href="#">A voir</a>
+            </div>
         {% endblock %}
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">link1</a></li>
-            <li><a href="#">link2</a></li>
-            <li><a href="#">link3</a></li>
-        </ul>
-        {% block sidebarLeft %}
-
-        {% endblock %}
-    </nav>
     <main>
         {% block main %}{% endblock %}
     </main>

@@ -9,27 +9,22 @@ html{
 }
 body{
     display: grid;
-    min-height: 100%;
-    width: 100%;
-    grid-template-areas: "header header"
-                         "nav main";
-    grid-template-rows: 200px 1fr; 
-    grid-template-columns: 220px 1fr;
+    min-height: auto;
+    width: auto;
+    grid-template-areas: "header"
+                         "main";
+    grid-template-rows: 300px 1fr; 
+    grid-template-columns: 220 1fr;
     margin: 0;
+    background-image: url("../images/FOND BASE.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 header {
     grid-area: header ;
-    background: url("../images/banniere-site2.jpg") no-repeat;
     background-size: cover;
-}
-nav{
-    grid-area: nav;
-    height: 100%;
-    border-radius: 5px;
-    border-width: 10px;
-    border-color: #0f4c75;
-    border: solid;
 }
 main{
     grid-area: main;
@@ -39,9 +34,47 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
 .titleName{
     font-family: "mandalorelaser";
     font-size: 100px;
+    color: white;
+}
+.navigation{
+    background-image: url("../images/BANDE ROGNER.png");
+    min-height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial;
+    font-size: 35px;
+}
+a{
+    color: white;
+    margin-left: 315px;
+    text-decoration: none;
+}
+
+.link-film{
+    padding-top: 100px;
+    transform: rotate(27deg);
+}
+.link-favoris{
+    padding-top: 25px;
+    margin-left: 265px;
+    transform: rotate(5deg);
+}
+.link-connexion{
+    padding-top: 140px;
+    margin-left: 315px;
+    transform: rotate(-6deg);
+}
+.link-aVoir{
+    margin-left: 240px;
+    padding-bottom: 15px;
+    transform: rotate(-27deg);
 }

@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "bootstrap": "^4.4.1"
+  },
+  "dependencies": {
+    "hover.css": "^2.3.2"
   }
 }
